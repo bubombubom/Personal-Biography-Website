@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>                                                              
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="contact_style.css" />
+        <link rel="stylesheet" href="nav_style.css" />
+        <title>Baron_ICWD_Finals</title>  
+    </head>
+    <body>
+        <nav id="nav">
+            <div class="left_links">
+                <a href="index.html">Welcome!</a>
+                <a href="about.html">Meet Emil!</a>
+                <a href="education.html">My Education</a>
+                <a href="goals.html">Career Goals</a>
+            </div>
+          
+            <div class="right_links"> 
+                <a href="contact.html">Get in touch!</a>
+            </div>
+        </nav>
+
+        <main class="contact_section">
+            <section class="contact_box">
+                <div class="contact_grid">
+                    <div class="form_area">
+                        <h1><span>Contact me!</span></h1>
+                        <form action="https://formsubmit.co/baronryle@gmail.com" method="POST">
+                            <input type="hidden" name="_subject" value="New message from Contact page" />
+                            <input type="hidden" name="_captcha" value="false" />
+                            <input type="text" name="name" placeholder="Name:" required />
+                            <input type="email" name="email" placeholder="E-mail:" required />
+                            <textarea name="message" placeholder="Message:" required></textarea>
+                            <div class="btn_row">
+                                <button type="submit">Send!</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <aside class="socials">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                            <img src="images/instagram_logo.svg" alt="Instagram" />
+                            <p>Instagram</p>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                            <img src="images/facebook_logo.svg" alt="Facebook" />
+                            <p>Facebook</p>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                            <img src="images/linkedin_logo.svg" alt="LinkedIn" />
+                            <p>LinkedIn</p>
+                        </a>
+                    </aside>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
