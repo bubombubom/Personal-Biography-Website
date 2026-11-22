@@ -1,0 +1,167 @@
+body {
+    background-color: #F3F0EB;
+    font-family: "Open Sans", sans-serif;
+    color: #201E1F;
+}
+
+.education_container {
+    width: 88%;
+    margin: 80px auto 150px auto;
+}
+
+/* Main H1 Heading matching your other pages */
+.header_title h1 {
+    margin: 0 0 60px 0;
+    font-size: 96px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.1;
+}
+
+.header_title h1 span {
+    color: #CE52A9;
+    -webkit-text-stroke: 2px #201E1F;
+    text-shadow: 5px 0 #685BC7;
+}
+
+/* Timeline Layout */
+.timeline {
+    position: relative;
+    width: 100%;
+}
+
+.timeline_row {
+    display: grid;
+    grid-template-columns: 1fr 220px 1fr;
+    align-items: stretch;
+    padding-bottom: 60px;
+}
+
+.timeline_row.last_row {
+    padding-bottom: 0;
+}
+
+/* Center Node & Dotted Line */
+.timeline_center {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 35px; /* Aligns circle vertically with the 96px year heading */
+    position: relative;
+    z-index: 2;
+}
+
+/* Connects center of each circle directly to the center of the next circle */
+.timeline_row:not(.last_row) .timeline_center::before {
+    content: "";
+    position: absolute;
+    top: 52px;
+    bottom: -125px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    background-color: #201E1F;
+    z-index: -1;
+}
+
+.timeline_row.right .timeline_center {
+    justify-content: flex-start;
+    padding-left: 93px; /* Centers the 34px circle on the 50% line */
+}
+
+.timeline_row.left .timeline_center {
+    justify-content: flex-end;
+    padding-right: 93px; /* Centers the 34px circle on the 50% line */
+}
+
+.circle {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 2px solid #201E1F;
+    flex-shrink: 0;
+}
+
+.circle.green {
+    background-color: #CEE73F;
+}
+
+.circle.purple {
+    background-color: #685BC7;
+}
+
+.circle.pink {
+    background-color: #CE52A9;
+}
+
+/* Dotted Connector with Small End Dot */
+.connector {
+    width: 90px;
+    border-top: 2px dashed #201E1F;
+    margin-top: 16px; /* Aligns dotted line with the center of the 34px circle */
+    position: relative;
+}
+
+.timeline_row.right .connector::after {
+    content: "";
+    position: absolute;
+    right: -4px;
+    top: -5px;
+    width: 8px;
+    height: 8px;
+    background-color: #201E1F;
+    border-radius: 50%;
+}
+
+.timeline_row.left .connector::before {
+    content: "";
+    position: absolute;
+    left: -4px;
+    top: -5px;
+    width: 8px;
+    height: 8px;
+    background-color: #201E1F;
+    border-radius: 50%;
+}
+
+/* Text Alignment for Left & Right Columns */
+.timeline_row.right .timeline_content {
+    text-align: right;
+}
+
+.timeline_row.left .timeline_content {
+    text-align: left;
+}
+
+/* Years & Headings (96px) */
+.timeline_content h2 {
+    margin: 0 0 20px 0;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #201E1F;
+}
+
+/* Smaller Details (24px) */
+.timeline_content p {
+    font-size: 24px;
+    line-height: 1.4;
+    margin: 0 0 25px 0;
+    color: #201E1F;
+}
+
+/* Google Street View Embed Boxes */
+.map_embed {
+    width: 100%;
+    height: 500px;
+    background-color: #D8D8D8;
+    border: 2px solid #201E1F;
+    margin-top: 30px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.map_embed iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}

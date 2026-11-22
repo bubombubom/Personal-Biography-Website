@@ -1,0 +1,140 @@
+body {
+    background-color: #685BC7;
+    font-family: "Open Sans", sans-serif;
+}
+
+.introduction {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 100px;
+    width: 88%;
+    margin: auto;
+}
+
+.text_content {
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.text_content h1 {
+    margin: 0;
+    font-size: 96px;
+    font-family: "Open Sans", sans-serif;
+    color: #F3F0EB;
+    line-height: 1.1;
+}
+
+.text_content h1 span {
+    color: #F3F0EB;
+    -webkit-text-stroke: 2px #201E1F;
+    text-shadow: 5px 0 #CE52A9;
+}
+
+.text_content p {
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+    color: #F3F0EB;
+    line-height: 1.5;
+    max-width: 650px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.text_content a {
+    margin-top: 40px;
+    display: inline-block;
+    padding: 12px 30px;
+    border: 2px solid #201E1F;
+    border-radius: 30px;
+    background-color: #CEE73F;
+    color: #201E1F;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.picture2 {
+    margin-top: 100px;
+    margin-left: -190px;
+    overflow: hidden;
+}
+
+.picture2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hobbies Section */
+.hobbies {
+    width: 100%;
+    margin-top: 180px;
+    padding: 120px 0 150px 0;
+    background-color: #F3F0EB;
+    color: #201E1F;
+}
+
+.hobbies_container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hobbies_container h2 {
+    margin: 0;
+    font-size: 96px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.1;
+}
+
+.hobbies_container h2 span {
+    color: #685BC7;
+    -webkit-text-stroke: 2px #201E1F;
+    text-shadow: 5px 0 #CEE73F;
+}
+
+.hobbies_intro {
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 40px 0 60px 25px;
+    color: #201E1F;
+}
+
+.hobby_row {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 90px;
+}
+
+.hobby_row:last-child {
+    margin-bottom: 0;
+}
+
+.hobby_text {
+    margin: 0 0 0 25px;
+    padding-left: 30px;
+}
+
+.hobby_text li {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #201E1F;
+}
+
+.hobby_image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background-color: #D8D8D8;
+    border: 2px solid #201E1F;
+    overflow: hidden;
+}
+
+.hobby_image img,
+.hobby_image video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
