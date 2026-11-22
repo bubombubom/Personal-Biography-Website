@@ -66,7 +66,6 @@ body {
     object-fit: cover;
 }
 
-/* Hobbies Section */
 .hobbies {
     width: 100%;
     margin-top: 180px;
@@ -129,6 +128,7 @@ body {
     background-color: #D8D8D8;
     border: 2px solid #201E1F;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .hobby_image img,
